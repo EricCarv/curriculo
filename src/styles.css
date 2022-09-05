@@ -11,8 +11,16 @@ h1.apre{
     background-color: rgb(30, 144, 255) !important;
     outline: 3px !important;
 }
-footer{
+h6.footer{
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important
+}
+h2.tit{
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important
+}
+div.stl{
+    background-color: rgb(215, 222, 224) !important;
 }
