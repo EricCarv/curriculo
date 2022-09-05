@@ -2,6 +2,20 @@
   <head>
     <title>Portifolio Pessoal</title>
     <link href="./app.component.css" rel="stylesheet">
+    <script>
+      function SlvCont() {
+
+        var email = document.getElementById("InputEmail");
+        var tel = document.getElementById("InputTel");
+        var tel = document.getElementById("radioTel");
+        
+
+          if (email.value != "") {
+          alert('Obrigado os seus dados foram encaminhados com sucesso. Irei retornar o mais rapido possivel!');
+      }
+
+    }
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-light" style="background-color: #a7a7a7;">
@@ -33,7 +47,7 @@
           </div>
         </div>
         <div>
-          <h1 class="apre">Projetos</h1>
+          <h1 class="apre">Meus Projetos</h1>
           <span>Sempre gostei muito de desenvolver projetos, testar coisas novas, e me desafiar meus conhecimentos</span>
           <br>
           <span>Vou listar aqui alguns projetos que me envolvi nos ultimos anos e acho que merecem destaque</span>
@@ -60,7 +74,7 @@
               <h4>2017 - 2022</h4>
               <span>Este projeto tinha como intuito a criação de uma estação metereologica visando o menor custo de produção possivel</span>
               <br>
-              <span>O projeto passou por diversas modicações durante seu desenvolvimento, dentre elas foi o modo de distibuição das informações. No pricipio as informações coletadas eram enviadas de forma autonoma ao perfil do twitter </span>
+              <span>O projeto passou por diversas modicações durante seu desenvolvimento, dentre elas foi o modo de distibuição das informações. No pricipio as informações coletadas eram enviadas de forma autonoma ao no agora desativado perfil do twitter </span>
               <a href="https://twitter.com/Chuvibot"> Ardulindo do tempo </a>
               <br>
               <img src="https://pbs.twimg.com/profile_banners/989650347047243777/1529534870/1500x500" height ="300" width="1000" />
@@ -78,12 +92,61 @@
               <a href="https://colombo.ifpr.edu.br/index.php/2019/11/27/estudantes-do-campus-colombo-conquistam-as-tres-primeiras-colocacoes-em-mostra-nacional/">-1º Mostra Brasileira de Inovação, Pesquisa Científica e Empreendedorismo (MOBIPE)</a>   
               <br>
               <span>-III MOSTRA CIENTÍFICA ECOINOVAR (1º lugar na categoria Ensino Tecnico)</span>
+            </li>
+            <li>
+                <h3>CRSS - Sistema de segurança residencial</h3>
+                <h4>2021</h4>
+                <br>
+                <Span>Este Projeto Buscava desenvolver uma central capaz de detectar e  monitorar niveis de GLP(Gas liquefeito de petroleo) e CO (Monoxido de Carbono), de forma autonoma priorizando o baixo custo de produção sem abrir mão da confiabilidade do produto</Span>
+                <br>
+                <span>Utilizei este projeto como meu TCC no curso de Tecnico Informatica</span>
             </li>       
           </ul>
         </div>
         <div class="apre">
           <h1 class="apre"><a name="sobre"></a>Sobre mim</h1>
           <span>Me chamo Ericsson tenho 20 anos e sou apaixonado por tecnologia.</span>
+          <span>Gosto de me aventurar com novas Tecnologias e desenvolver programas e prototipos por diversão </span>
+          <br>
+          <span>Sou formado Tecnico em Informatica pelo IFPR campus colombo (2017-2021).</span>
+          <span> E atualmente estou cursando Tecnologo em ciencia de dados na Uninter (2021 - )</span>
+          <br>
+          <span>Tenho muita vontade de desenvolver um Game no futuro (uma das minhas maiores motivações para aprender programação)</span>
+          <span>Meus maiores passatempos atualmente são reformar meu carro, um ford Escort 1989. E modelagem e impressão em 3D, nas duas coisas eu não sou muito bom 😅  </span>
+          <br>
+          <span>Para mais projetos acesse meu github pelo botão ao lado ---></span>
+          <a class="btn btn-secondary" href="https://github.com/EricCarv" role="button">
+            <img src="https://www.svgrepo.com/show/344880/github.svg" height ="30" width="30" />
+          </a>
+          <span>lá é onde eu normalmente coloco meus projetos malucos</span>
+        </div>
+        <div class="contato">
+          <h1 class="apre">Entre em contato comigo</h1> 
+          <span>Gostou do meu trabalho e gostaria de conversar comigo? Preencha o formulario abaixo e retornarei o contato assim que possivel!</span>
+          
+          <form>
+            <div class="form-group">
+              <label for="Email">Endereço de email</label>
+              <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Insira aqui o seu email de contato xxxxxx@xxxxx.com">
+            </div>
+            <div class="form-group">
+              <label for="Tel">Telefone de contato</label>
+              <input type="tel" class="form-control" id="InputTel" aria-describedby="TelHelp" placeholder="Insira aqui o seu telefone para contato (xx)xxxxx-xxxx">
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radioemal" id="radioemail" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Prefiro receber o contato via Email!
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radiotel" id="radioTel" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Prefiro receber o contato via telefone!
+              </label>
+            </div>  
+            <button type="submit" class="btn btn-success" onclick="SlvCont()">Enviar</button>
+          </form>
         </div>
 
       </div>
