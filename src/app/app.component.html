@@ -1,7 +1,10 @@
 <html>
   <head>
+    <!--Declaração do titulo da pagina-->
     <title>Portifolio Pessoal</title>
+    <!--Importação do aquivo de personalização CSS-->
     <link href="./app.component.css" rel="stylesheet">
+    <!--Definição do script de confirmação utilizasdo posteriormente-->
     <script>
       function SlvCont() {
 
@@ -22,8 +25,11 @@
     }
     </script>
   </head>
+  <!--Inicio do corpo da pagina-->
   <body>
+    <!--Definição de  da classe responsavel por acomodar o menu horizontal da pagina-->
     <nav class="navbar navbar-light" style="background-color: #a7a7a7;">
+      <!--Definição das divs responsaveis por acomodar os conteudos -->
       <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">
@@ -38,7 +44,9 @@
           </div>
       </div>
     </nav>
+    <!--Inicio da classe principal da pagina-->
     <main class="stl">
+      <!--Container responsavel por acomodar os botões de navegação pela pagina-->
       <div class="container">
         <div class="stl">
           <h2 class="tit">Seja bem vindo ao meu Portifolio Virtual!</h2>
@@ -52,6 +60,7 @@
           </div>
         </div>
         <div>
+          <!--Div responsavel por acomodar a seção de projetos da pagina-->
           <a name="proj"></a>
           <h1 class="apre">Meus Projetos</h1>
           <span>Sempre gostei muito de desenvolver projetos, testar coisas novas, e desafiar meus conhecimentos</span>
@@ -60,6 +69,7 @@
           <br>
         </div>
         <div>
+          <!--Inicio da lista ordenada para acomodar os projetos-->
           <ul>
             <li>
               <h3>Sistema gerenciador de Almoxarifados Automatizado</h3>
@@ -75,6 +85,7 @@
               <span>Mais informações desse projeto podem ser encontradas neste artigo, publicado pelo tenente do corpo de bombeiros Lucas Gross</span>
               <a href="https://www.brazilianjournals.com/index.php/BRJD/article/view/45226"> Link para o Artigo </a>
             </li>
+            <!--Divisão entre as celulas-->
             <li>
               <h3>Estação metereológica de baixo custo</h3>
               <h4>2017 - 2022</h4>
@@ -99,6 +110,7 @@
               <br>
               <span>-III MOSTRA CIENTÍFICA ECOINOVAR (1º lugar na categoria Ensino Tecnico)</span>
             </li>
+            <!--Divisão entre as celulas-->
             <li>
                 <h3>CRSS - Sistema de segurança residencial</h3>
                 <h4>2021</h4>
@@ -109,6 +121,7 @@
             </li>       
           </ul>
         </div>
+        <!--Div responsavel por acomodar seção sobre mim e formação academica-->
         <div class="apre">
           <h1 class="apre"><a name="sobre"></a>Sobre mim</h1>
           <span>Me chamo Ericsson tenho 20 anos e sou apaixonado por tecnologia.</span>
@@ -121,25 +134,30 @@
           <span>Meus maiores passatempos atualmente são reformar meu carro, um ford Escort 1989. E modelagem e impressão em 3D, nas duas coisas eu não sou muito bom 😅  </span>
           <br>
           <span>Para mais projetos acesse meu github pelo botão ao lado ---></span>
+          <!--botão que enviara o usuario a minha pagina do github utilizando imagem de repositorio externo-->
           <a class="btn btn-secondary" href="https://github.com/EricCarv" role="button">
             <img src="https://www.svgrepo.com/show/344880/github.svg" height ="30" width="30" />
           </a>
           <span>lá é onde eu normalmente coloco meus projetos malucos</span>
         </div>
+        <!--Modulo  por receber o formulartio de contato-->
         <div class="contato">
           <a name="Contat"></a>
           <h1 class="apre">Entre em contato comigo</h1> 
           <span>Gostou do meu trabalho e gostaria de conversar comigo? Preencha o formulário abaixo e retornarei o contato assim que possivel!</span>
-          
+          <!--Formulario de contato-->
           <form>
             <div class="form-group">
+              <!--Campo para recebimento de EMAIL-->
               <label for="Email">Endereço de email</label>
               <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Insira aqui o seu email de contato xxxxxx@xxxxx.com">
             </div>
+             <!--Campo de recebimento de telefone-->
             <div class="form-group">
               <label for="Tel">Telefone de contato</label>
               <input type="tel" class="form-control" id="InputTel" aria-describedby="TelHelp" placeholder="Insira aqui o seu telefone para contato (xx)xxxxx-xxxx">
             </div>
+            <!--Radios para Escolher metodo de contato preferido-->
             <div class="form-check">
               <input class="form-check-input" type="radio" name="radioemal" id="radioemail" value="option1" checked>
               <label class="form-check-label" for="rad1">
@@ -152,15 +170,18 @@
                 Prefiro receber o contato via telefone!
               </label>
             </div>  
+            <!--Botão para enviar dados preenchidos-->>
             <button type="submit" class="btn btn-success" onclick="SlvCont()">Enviar</button>
           </form>
         </div>
 
       </div>
     </main>
+    <!--Rodapé da pagina-->
     <footer>
       <h6 class="footer" >Developed by Ericsson Carvalho - 2022</h6>
     </footer>  
   </body>
+  <!--fim do documento-->
 </html>
 <router-outlet></router-outlet>
