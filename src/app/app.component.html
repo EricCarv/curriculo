@@ -7,11 +7,16 @@
 
         var email = document.getElementById("InputEmail");
         var tel = document.getElementById("InputTel");
-        var tel = document.getElementById("radioTel");
-        
+        var radtel = document.getElementById("radioTel");
+        var radtel2 =document.getElementById("radioemail");
 
           if (email.value != "") {
-          alert('Obrigado os seus dados foram encaminhados com sucesso. Irei retornar o mais rapido possivel!');
+            if (tel.value != "" ){
+              alert('Obrigado os seus dados foram encaminhados com sucesso. Irei retornar o mais rapido possivel!');
+            }
+            else{
+              alert('Por favor verifique os dados e tente novamente, um campo foi recebido sem dados');
+            }
       }
 
     }
@@ -40,13 +45,14 @@
           <h5>Nesta pagina voce podera encontrar algumas informações a mais sobre mim</h5>
           <h5>Os botões a baixo vão te ajudar a navegar pelos principais topicos desta pagina </h5> 
           <div class="bt-container">
-            <a class="btn btn-outline-primary" href="sobre" role="button">Sobre mim</a>
-            <a class="btn btn-outline-primary" href="#" role="button">Projetos</a>
-            <a class="btn btn-outline-primary" href="#" role="button">Minha formação</a>
+            <a class="btn btn-outline-primary" href="#sobre" role="button">Sobre mim</a>
+            <a class="btn btn-outline-primary" href="#proj" role="button">Projetos</a>
+            <a class="btn btn-outline-primary" href="#Contat" role="button">Contato</a>
 
           </div>
         </div>
         <div>
+          <a name="proj"></a>
           <h1 class="apre">Meus Projetos</h1>
           <span>Sempre gostei muito de desenvolver projetos, testar coisas novas, e me desafiar meus conhecimentos</span>
           <br>
@@ -56,7 +62,7 @@
         <div>
           <ul>
             <li>
-              <h3>Sitema gerenciador de Aumoxarifados Automatizado</h3>
+              <h3>Sistema gerenciador de Aumoxarifados Automatizado</h3>
               <h4>2021 - 2022</h4>
               <br>            
               <span>Participei junto a outros 2 desenvolvedores, da criação de um sistema de gerenciamento automatizado do estoque de um dos Batalhoes do corpo de bombeiros do Paraná</span>
@@ -121,6 +127,7 @@
           <span>lá é onde eu normalmente coloco meus projetos malucos</span>
         </div>
         <div class="contato">
+          <a name="Contat"></a>
           <h1 class="apre">Entre em contato comigo</h1> 
           <span>Gostou do meu trabalho e gostaria de conversar comigo? Preencha o formulario abaixo e retornarei o contato assim que possivel!</span>
           
@@ -135,13 +142,13 @@
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="radioemal" id="radioemail" value="option1" checked>
-              <label class="form-check-label" for="exampleRadios1">
+              <label class="form-check-label" for="rad1">
                 Prefiro receber o contato via Email!
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="radiotel" id="radioTel" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
+              <label class="form-check-label" for="rad2">
                 Prefiro receber o contato via telefone!
               </label>
             </div>  
